@@ -1,0 +1,143 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Landing page enhancements */
+.hero-section .btn i,
+.hero-section svg {
+  vertical-align: middle;
+}
+
+.service-card {
+  border-radius: 14px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
+}
+
+.icon-box {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.service-card:hover .icon-box {
+  transform: translateY(-6px) rotate(-6deg);
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.08);
+}
+
+/* CTA button tweaks */
+.cta-section .btn {
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.12);
+}
+
+/* Colorful link accents */
+.text-primary-link {
+  color: #0d6efd;
+}
+
+.text-success-link {
+  color: #198754;
+}
+
+.text-warning-link {
+  color: #d39e00;
+}
+
+/* small-card styles for compact patient/doctor items */
+.small-card {
+  border-radius: 12px;
+  padding: 0.15rem;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.small-card .card-body {
+  padding: 0.6rem 0.8rem;
+}
+
+.small-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+}
+
+.small-icon-box {
+  box-shadow: 0 6px 16px rgba(2, 6, 23, 0.06);
+}
+
+.small-card .small-card-title {
+  font-size: 0.95rem;
+}
+
+.small-card .small-card-sub {
+  font-size: 0.78rem;
+}
+
+/* handle colorClass values that include bg-* (like bg-primary) */
+.small-card.bg-primary {
+  background: var(--bs-primary);
+  color: #fff;
+}
+
+.small-card.bg-success {
+  background: var(--bs-success);
+  color: #fff;
+}
+
+/* Spline scene wrapper used on Login/Register */
+.spline-wrapper {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.03));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 8px 24px rgba(2, 6, 23, 0.06);
+}
+
+.spline-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}

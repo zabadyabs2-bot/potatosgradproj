@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "OnlineMedicalSystem": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:59111;http://localhost:59112"
+    }
+  }
+}

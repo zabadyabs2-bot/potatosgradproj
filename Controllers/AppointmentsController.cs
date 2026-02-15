@@ -1,0 +1,65 @@
+<<<<<<< HEAD
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using OnlineMedicalSystem.Data;
+using OnlineMedicalSystem.Models;
+using System.Security.Claims;
+=======
+using Microsoft.AspNetCore.Mvc;
+using OnlineMedicalSystem.Data;
+using OnlineMedicalSystem.Models;
+>>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
+
+namespace OnlineMedicalSystem.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class AppointmentsController : ControllerBase
+{
+    private readonly AppDbContext _context;
+    public AppointmentsController(AppDbContext context) => _context = context;
+
+    [HttpPost]
+    public async Task<IActionResult> Create(Appointment appointment)
+    {
+        _context.Appointments.Add(appointment);
+        await _context.SaveChangesAsync();
+        return Ok(appointment);
+    }
+
+    [HttpGet]
+    public IActionResult GetAll() => Ok(_context.Appointments);
+<<<<<<< HEAD
+
+    [Authorize(Roles = "Patient")]
+    [HttpGet("my-Appointment")]
+    public async Task<IActionResult> GetMyAppointments()
+    {
+        var patientId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+
+        var appointments = await _context.Appointments
+            .Where(a => a.PatientId == patientId)
+            .Include(a => a.Doctor)
+            .Select(a => new
+            {
+                
+                a.Doctor.Name,
+                a.Doctor.Phone,
+                a.Doctor.Email,
+                a.AppointmentDate,
+                a.Status
+            })
+            .ToListAsync();
+
+        return Ok(appointments);
+    }
+
+
+
+
+}
+
+=======
+}
+>>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467

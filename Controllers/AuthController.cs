@@ -1,0 +1,134 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using OnlineMedicalSystem.Data;
+using OnlineMedicalSystem.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+
+namespace OnlineMedicalSystem.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AuthController : ControllerBase
+    {
+        private readonly AppDbContext _context;
+<<<<<<< HEAD
+        private readonly IConfiguration _config;
+
+        public AuthController(AppDbContext context, IConfiguration config)
+        {
+            _context = context;
+            _config = config;
+=======
+        private readonly string _jwtKey = "ThisIsMySuperSecretKey123!aytrashkter;klsfhjgkljmshjndfgkljds'a;lfjnkjsjndfljk";
+
+        public AuthController(AppDbContext context)
+        {
+            _context = context;
+>>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
+        }
+
+        // POST: /api/auth/doctor/signup
+        [HttpPost("doctor/signup")]
+        public IActionResult DoctorSignUp([FromBody] Doctor doctor)
+        {
+            if (_context.Doctors.Any(d => d.Phone == doctor.Phone))
+                return BadRequest("Phone number already exists.");
+
+            doctor.Password = BCrypt.Net.BCrypt.HashPassword(doctor.Password);
+
+            _context.Doctors.Add(doctor);
+            _context.SaveChanges();
+
+            return Ok("Doctor created successfully.");
+        }
+
+        // POST: /api/auth/doctor/login
+        [HttpPost("doctor/login")]
+        public IActionResult DoctorLogin([FromBody] Doctor login)
+        {
+            var doctor = _context.Doctors.SingleOrDefault(d => d.Email == login.Email);
+            if (doctor == null) return Unauthorized("Invalid credentials.");
+
+            if (!BCrypt.Net.BCrypt.Verify(login.Password, doctor.Password))
+                return Unauthorized("Invalid credentials.");
+
+            var token = GenerateJwtToken(doctor.Id, doctor.Name, "Doctor");
+            return Ok(new { Token = token });
+        }
+        private string GenerateJwtToken(int id, string name, string role)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+<<<<<<< HEAD
+            var key = Encoding.UTF8.GetBytes(_config["Jwt:Key"]);
+=======
+            var key = Encoding.ASCII.GetBytes(_jwtKey);
+>>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+<<<<<<< HEAD
+{
+                new Claim(ClaimTypes.NameIdentifier, id.ToString()), // ✅ FIXED
+                new Claim(ClaimTypes.Name, name),
+                new Claim(ClaimTypes.Role, role) // ✅ FIXED
+}),
+
+                Expires = DateTime.UtcNow.AddHours(2),
+                Issuer = _config["Jwt:Issuer"],
+                Audience = _config["Jwt:Audience"],
+=======
+                {
+                new Claim("Id", id.ToString()),
+                new Claim(ClaimTypes.Name, name),
+                new Claim(ClaimTypes.Role, role)
+                }),
+                Expires = DateTime.UtcNow.AddHours(2),
+>>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key),
+                    SecurityAlgorithms.HmacSha256Signature
+                )
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+
+        [HttpPost("patient/signup")]
+        public IActionResult PatientSignUp([FromBody] Patient patient)
+        {
+            if (_context.Patients.Any(p => p.Phone == patient.Phone))
+                return BadRequest("Phone number already exists.");
+
+            patient.Password = BCrypt.Net.BCrypt.HashPassword(patient.Password);
+
+            _context.Patients.Add(patient);
+            _context.SaveChanges();
+
+            return Ok("Patient created successfully.");
+        }
+
+        // POST: /api/auth/patient/login
+        [HttpPost("patient/login")]
+        public IActionResult PatientLogin([FromBody] Patient login)
+        {
+            var patient = _context.Patients.SingleOrDefault(p => p.Email == login.Email);
+            if (patient == null) return Unauthorized("Invalid credentials.");
+
+            if (!BCrypt.Net.BCrypt.Verify(login.Password, patient.Password))
+                return Unauthorized("Invalid credentials.");
+
+            var token = GenerateJwtToken(patient.Id, patient.Name, "Patient");
+            return Ok(new { Token = token });
+        }
+    }
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
