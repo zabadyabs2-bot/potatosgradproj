@@ -9,9 +9,5 @@ public class Doctor
     public string Specialty { get; set; } = string.Empty;
     public string Language { get; set; } = string.Empty;
     public string Username { get; set; } = string.Empty;
-<<<<<<< HEAD
-=======
-
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
     public string Password { get; set; } = string.Empty;
 }

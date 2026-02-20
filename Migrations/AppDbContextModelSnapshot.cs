@@ -45,13 +45,10 @@ namespace OnlineMedicalSystem.Migrations
 
                     b.HasKey("Id");
 
-<<<<<<< HEAD
                     b.HasIndex("DoctorId");
 
                     b.HasIndex("PatientId");
 
-=======
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
                     b.ToTable("Appointments");
                 });
 
@@ -195,7 +192,6 @@ namespace OnlineMedicalSystem.Migrations
 
                     b.HasKey("Id");
 
-<<<<<<< HEAD
                     b.HasIndex("AppointmentId");
 
                     b.ToTable("Prescriptions");
@@ -230,10 +226,6 @@ namespace OnlineMedicalSystem.Migrations
 
                     b.Navigation("Appointment");
                 });
-=======
-                    b.ToTable("Prescriptions");
-                });
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
 #pragma warning restore 612, 618
         }
     }
