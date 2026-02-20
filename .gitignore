@@ -1,0 +1,36 @@
+## Build folders
+bin/
+obj/
+
+## Rider / VS Code
+.vscode/
+.idea/
+
+## Visual Studio
+.vs/
+
+## User-specific files
+*.user
+*.suo
+
+## Logs
+*.log
+
+## EF Core Migrations snapshots backup
+*.dbmdl
+
+## App settings (DON'T PUSH SECRETS)
+appsettings.Development.json
+appsettings.Production.json
+
+## Publish output
+publish/
+
+## Node (if you have React frontend inside same repo)
+node_modules/
+dist/
+build/
+
+## Environment files
+.env
+.env.*
