@@ -64,11 +64,7 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.3": {
-=======
-      "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.2": {
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
@@ -685,26 +681,15 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.IdentityModel.Abstractions/8.0.1": {
         "type": "package",
         "compile": {
           "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
-=======
-      "Microsoft.IdentityModel.Abstractions/8.15.0": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll": {
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
             "related": ".xml"
           }
         },
         "runtime": {
-<<<<<<< HEAD
           "lib/net9.0/Microsoft.IdentityModel.Abstractions.dll": {
-=======
-          "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll": {
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
             "related": ".xml"
           }
         }
@@ -725,7 +710,6 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.IdentityModel.Logging/8.0.1": {
         "type": "package",
         "dependencies": {
@@ -733,24 +717,11 @@
         },
         "compile": {
           "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
-=======
-      "Microsoft.IdentityModel.Logging/8.15.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "8.15.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.IdentityModel.Logging.dll": {
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
             "related": ".xml"
           }
         },
         "runtime": {
-<<<<<<< HEAD
           "lib/net9.0/Microsoft.IdentityModel.Logging.dll": {
-=======
-          "lib/net10.0/Microsoft.IdentityModel.Logging.dll": {
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
             "related": ".xml"
           }
         }
@@ -788,7 +759,6 @@
           }
         }
       },
-<<<<<<< HEAD
       "Microsoft.IdentityModel.Tokens/8.0.1": {
         "type": "package",
         "dependencies": {
@@ -796,24 +766,11 @@
         },
         "compile": {
           "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
-=======
-      "Microsoft.IdentityModel.Tokens/8.15.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Logging": "8.15.0"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.IdentityModel.Tokens.dll": {
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
             "related": ".xml"
           }
         },
         "runtime": {
-<<<<<<< HEAD
           "lib/net9.0/Microsoft.IdentityModel.Tokens.dll": {
-=======
-          "lib/net10.0/Microsoft.IdentityModel.Tokens.dll": {
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
             "related": ".xml"
           }
         }
@@ -1196,17 +1153,10 @@
         "logo.png"
       ]
     },
-<<<<<<< HEAD
     "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.3": {
       "sha512": "TBDs8e9y2vJHp14EwNfnIZUNrm6siw8PAAU5laOrYFuGgRxx8oCdxZyfTgp1Oy/icUk9h/XtpYBHPnXIG0f2/g==",
       "type": "package",
       "path": "microsoft.aspnetcore.authentication.jwtbearer/10.0.3",
-=======
-    "Microsoft.AspNetCore.Authentication.JwtBearer/10.0.2": {
-      "sha512": "UJGH1qpJgNSmDcAQQRtdUY/auztO+EJK4HHz3akdneWQ+3ladiLEMJeZOqjYiMcPf/h+MSAQq+xij+7umi7VXQ==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/10.0.2",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1215,11 +1165,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
         "lib/net10.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
-<<<<<<< HEAD
         "microsoft.aspnetcore.authentication.jwtbearer.10.0.3.nupkg.sha512",
-=======
-        "microsoft.aspnetcore.authentication.jwtbearer.10.0.2.nupkg.sha512",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
@@ -2631,7 +2577,6 @@
         "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
-<<<<<<< HEAD
     "Microsoft.IdentityModel.Abstractions/8.0.1": {
       "sha512": "OtlIWcyX01olfdevPKZdIPfBEvbcioDyBiE/Z2lHsopsMD7twcKtlN9kMevHmI5IIPhFpfwCIiR6qHQz1WHUIw==",
       "type": "package",
@@ -2639,18 +2584,6 @@
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-=======
-    "Microsoft.IdentityModel.Abstractions/8.15.0": {
-      "sha512": "e/DApa1GfxUqHSBHcpiQg8yaghKAvFVBQFcWh25jNoRobDZbduTUACY8bZ54eeGWXvimGmEDdF0zkS5Dq16XPQ==",
-      "type": "package",
-      "path": "microsoft.identitymodel.abstractions/8.15.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net10.0/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/net10.0/Microsoft.IdentityModel.Abstractions.xml",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "lib/net462/Microsoft.IdentityModel.Abstractions.dll",
         "lib/net462/Microsoft.IdentityModel.Abstractions.xml",
         "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
@@ -2663,11 +2596,7 @@
         "lib/net9.0/Microsoft.IdentityModel.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
-<<<<<<< HEAD
         "microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
-=======
-        "microsoft.identitymodel.abstractions.8.15.0.nupkg.sha512",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "microsoft.identitymodel.abstractions.nuspec"
       ]
     },
@@ -2694,7 +2623,6 @@
         "microsoft.identitymodel.jsonwebtokens.nuspec"
       ]
     },
-<<<<<<< HEAD
     "Microsoft.IdentityModel.Logging/8.0.1": {
       "sha512": "UCPF2exZqBXe7v/6sGNiM6zCQOUXXQ9+v5VTb9gPB8ZSUPnX53BxlN78v2jsbIvK9Dq4GovQxo23x8JgWvm/Qg==",
       "type": "package",
@@ -2702,18 +2630,6 @@
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-=======
-    "Microsoft.IdentityModel.Logging/8.15.0": {
-      "sha512": "1gJLjhy0LV2RQMJ9NGzi5Tnb2l+c37o8D8Lrk2mrvmb6OQHZ7XJstd/XxvncXgBpad4x9CGXdipbZzJJCXKyAg==",
-      "type": "package",
-      "path": "microsoft.identitymodel.logging/8.15.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net10.0/Microsoft.IdentityModel.Logging.dll",
-        "lib/net10.0/Microsoft.IdentityModel.Logging.xml",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "lib/net462/Microsoft.IdentityModel.Logging.dll",
         "lib/net462/Microsoft.IdentityModel.Logging.xml",
         "lib/net472/Microsoft.IdentityModel.Logging.dll",
@@ -2726,11 +2642,7 @@
         "lib/net9.0/Microsoft.IdentityModel.Logging.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Logging.xml",
-<<<<<<< HEAD
         "microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
-=======
-        "microsoft.identitymodel.logging.8.15.0.nupkg.sha512",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "microsoft.identitymodel.logging.nuspec"
       ]
     },
@@ -2780,7 +2692,6 @@
         "microsoft.identitymodel.protocols.openidconnect.nuspec"
       ]
     },
-<<<<<<< HEAD
     "Microsoft.IdentityModel.Tokens/8.0.1": {
       "sha512": "kDimB6Dkd3nkW2oZPDkMkVHfQt3IDqO5gL0oa8WVy3OP4uE8Ij+8TXnqg9TOd9ufjsY3IDiGz7pCUbnfL18tjg==",
       "type": "package",
@@ -2788,18 +2699,6 @@
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-=======
-    "Microsoft.IdentityModel.Tokens/8.15.0": {
-      "sha512": "zUE9ysJXBtXlHHRtcRK3Sp8NzdCI1z/BRDTXJQ2TvBoI0ENRtnufYIep0O5TSCJRJGDwwuLTUx+l/bEYZUxpCA==",
-      "type": "package",
-      "path": "microsoft.identitymodel.tokens/8.15.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net10.0/Microsoft.IdentityModel.Tokens.dll",
-        "lib/net10.0/Microsoft.IdentityModel.Tokens.xml",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "lib/net462/Microsoft.IdentityModel.Tokens.dll",
         "lib/net462/Microsoft.IdentityModel.Tokens.xml",
         "lib/net472/Microsoft.IdentityModel.Tokens.dll",
@@ -2812,11 +2711,7 @@
         "lib/net9.0/Microsoft.IdentityModel.Tokens.xml",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll",
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
-<<<<<<< HEAD
         "microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
-=======
-        "microsoft.identitymodel.tokens.8.15.0.nupkg.sha512",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
@@ -3260,36 +3155,29 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "BCrypt.Net-Next >= 4.0.3",
-<<<<<<< HEAD
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.2"
-=======
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.2",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.2",
-      "Microsoft.EntityFrameworkCore.Tools >= 10.0.2",
-      "Microsoft.IdentityModel.Tokens >= 8.15.0"
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zabad\\.nuget\\packages\\": {},
+    "C:\\Users\\abdelrhman\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zabad\\Desktop\\OnlineMedicalSystem\\OnlineMedicalSystem.csproj",
+      "projectUniqueName": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\OnlineMedicalSystem.csproj",
       "projectName": "OnlineMedicalSystem",
-      "projectPath": "C:\\Users\\zabad\\Desktop\\OnlineMedicalSystem\\OnlineMedicalSystem.csproj",
-      "packagesPath": "C:\\Users\\zabad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zabad\\Desktop\\OnlineMedicalSystem\\obj\\",
+      "projectPath": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\OnlineMedicalSystem.csproj",
+      "packagesPath": "C:\\Users\\abdelrhman\\.nuget\\packages\\",
+      "outputPath": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\zabad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abdelrhman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3328,11 +3216,7 @@
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-<<<<<<< HEAD
             "version": "[10.0.3, )"
-=======
-            "version": "[10.0.2, )"
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -3343,13 +3227,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.2, )"
-<<<<<<< HEAD
-=======
-          },
-          "Microsoft.IdentityModel.Tokens": {
-            "target": "Package",
-            "version": "[8.15.0, )"
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
           }
         },
         "imports": [
@@ -3371,11 +3248,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

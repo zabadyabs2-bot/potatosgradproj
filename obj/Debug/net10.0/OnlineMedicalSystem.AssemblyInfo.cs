@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineMedicalSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5d202804ba2af1172bc9e7977c0759cbfa1d4f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineMedicalSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineMedicalSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

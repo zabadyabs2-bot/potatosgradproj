@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OnlineMedicalSystem.Data;
 using OnlineMedicalSystem.Models;
 using System.Security.Claims;
-=======
-using Microsoft.AspNetCore.Mvc;
-using OnlineMedicalSystem.Data;
-using OnlineMedicalSystem.Models;
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
 
 namespace OnlineMedicalSystem.Controllers;
 
@@ -30,23 +24,25 @@ public class AppointmentsController : ControllerBase
 
     [HttpGet]
     public IActionResult GetAll() => Ok(_context.Appointments);
-<<<<<<< HEAD
 
-    [Authorize(Roles = "Patient")]
-    [HttpGet("my-Appointment")]
+    [Authorize(Roles = "Doctor")]
+    [HttpGet("my-appointments")]
     public async Task<IActionResult> GetMyAppointments()
     {
-        var patientId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+        var patientIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+        if (patientIdClaim == null) return Unauthorized();
+
+        if (!int.TryParse(patientIdClaim.Value, out var patientId))
+            return Unauthorized();
 
         var appointments = await _context.Appointments
             .Where(a => a.PatientId == patientId)
             .Include(a => a.Doctor)
             .Select(a => new
             {
-                
-                a.Doctor.Name,
-                a.Doctor.Phone,
-                a.Doctor.Email,
+                DoctorName = a.Doctor.Name,
+                DoctorPhone = a.Doctor.Phone,
+                DoctorEmail = a.Doctor.Email,
                 a.AppointmentDate,
                 a.Status
             })
@@ -54,12 +50,4 @@ public class AppointmentsController : ControllerBase
 
         return Ok(appointments);
     }
-
-
-
-
 }
-
-=======
-}
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467

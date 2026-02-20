@@ -15,20 +15,14 @@ namespace OnlineMedicalSystem.Controllers
     public class AuthController : ControllerBase
     {
         private readonly AppDbContext _context;
-<<<<<<< HEAD
         private readonly IConfiguration _config;
+
+        private readonly string _jwtKey = "ThisIsMySuperSecretKey123!aytrashkter;klsfhjgkljmshjndfgkljds'a;lfjnkjsjndfljk";
 
         public AuthController(AppDbContext context, IConfiguration config)
         {
             _context = context;
             _config = config;
-=======
-        private readonly string _jwtKey = "ThisIsMySuperSecretKey123!aytrashkter;klsfhjgkljmshjndfgkljds'a;lfjnkjsjndfljk";
-
-        public AuthController(AppDbContext context)
-        {
-            _context = context;
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
         }
 
         // POST: /api/auth/doctor/signup
@@ -62,35 +56,22 @@ namespace OnlineMedicalSystem.Controllers
         private string GenerateJwtToken(int id, string name, string role)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-<<<<<<< HEAD
-            var key = Encoding.UTF8.GetBytes(_config["Jwt:Key"]);
-=======
-            var key = Encoding.ASCII.GetBytes(_jwtKey);
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
+
+            var keyBytes = Encoding.UTF8.GetBytes(_config["Jwt:Key"]!);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]
-<<<<<<< HEAD
-{
-                new Claim(ClaimTypes.NameIdentifier, id.ToString()), // ✅ FIXED
-                new Claim(ClaimTypes.Name, name),
-                new Claim(ClaimTypes.Role, role) // ✅ FIXED
-}),
-
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.NameIdentifier, id.ToString()),
+                    new Claim(ClaimTypes.Name, name),
+                    new Claim(ClaimTypes.Role, role),
+                }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 Issuer = _config["Jwt:Issuer"],
                 Audience = _config["Jwt:Audience"],
-=======
-                {
-                new Claim("Id", id.ToString()),
-                new Claim(ClaimTypes.Name, name),
-                new Claim(ClaimTypes.Role, role)
-                }),
-                Expires = DateTime.UtcNow.AddHours(2),
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
                 SigningCredentials = new SigningCredentials(
-                    new SymmetricSecurityKey(key),
+                    new SymmetricSecurityKey(keyBytes),
                     SecurityAlgorithms.HmacSha256Signature
                 )
             };
@@ -127,8 +108,4 @@ namespace OnlineMedicalSystem.Controllers
             return Ok(new { Token = token });
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467

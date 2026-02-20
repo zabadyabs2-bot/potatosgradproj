@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -41,18 +41,5 @@ namespace OnlineMedicalSystem.Controllers
 
             return Ok(patients);
         }
-
-=======
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-
-namespace OnlineMedicalSystem.Controllers
-{
-    public class PatientController : Controller
-    {
-       
-
-        
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
     }
 }

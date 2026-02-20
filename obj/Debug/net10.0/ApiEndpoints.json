@@ -26,7 +26,16 @@
     "ReturnTypes": []
   },
   {
-<<<<<<< HEAD
+    "ContainingType": "OnlineMedicalSystem.Controllers.AppointmentsController",
+    "Method": "GetMyAppointments",
+    "RelativePath": "api/Appointments/my-appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OnlineMedicalSystem.Controllers.AuthController",
     "Method": "DoctorLogin",
     "RelativePath": "api/Auth/doctor/login",
@@ -91,8 +100,6 @@
     "ReturnTypes": []
   },
   {
-=======
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
     "ContainingType": "OnlineMedicalSystem.Controllers.DoctorsController",
     "Method": "GetDoctors",
     "RelativePath": "api/Doctors",
@@ -119,7 +126,6 @@
     "ReturnTypes": []
   },
   {
-<<<<<<< HEAD
     "ContainingType": "OnlineMedicalSystem.Controllers.PatientController",
     "Method": "GetMyPatients",
     "RelativePath": "api/Patient/my-patients",
@@ -130,8 +136,6 @@
     "ReturnTypes": []
   },
   {
-=======
->>>>>>> b2704bc6d18ccaa3f15d790767d00a8b9a23e467
     "ContainingType": "OnlineMedicalSystem.Controllers.PaymentsController",
     "Method": "Pay",
     "RelativePath": "api/Payments",
@@ -161,6 +165,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OnlineMedicalSystem.Controllers.PrescriptionsController",
+    "Method": "GetMyPrescription",
+    "RelativePath": "api/Prescriptions/my-prescription",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]
