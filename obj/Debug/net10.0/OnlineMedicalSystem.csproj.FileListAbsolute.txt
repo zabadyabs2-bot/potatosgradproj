@@ -151,7 +151,6 @@ D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\staticwebassets.bu
 D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\staticwebassets.development.json
 D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\swae.build.ex.cache
-D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\OnlineMe.8D6D26B7.Up2Date
 D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\OnlineMedicalSystem.dll
 D:\AllGitHubRepos\zorch_pro\potatosgradproj\obj\Debug\net10.0\refint\OnlineMedicalSystem.dll

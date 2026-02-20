@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{612021E0-AFFC-4CA8-94C9-F0D6C4F60FF3}|OnlineMedicalSystem.csproj|d:\\allgithubrepos\\zorch_pro\\potatosgradproj\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{612021E0-AFFC-4CA8-94C9-F0D6C4F60FF3}|OnlineMedicalSystem.csproj|solutionrelative:controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{612021E0-AFFC-4CA8-94C9-F0D6C4F60FF3}|OnlineMedicalSystem.csproj|d:\\allgithubrepos\\zorch_pro\\potatosgradproj\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{612021E0-AFFC-4CA8-94C9-F0D6C4F60FF3}|OnlineMedicalSystem.csproj|solutionrelative:controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,19 +37,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DoctorsController.cs",
+              "DocumentMoniker": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\Controllers\\DoctorsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorsController.cs",
+              "ToolTip": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\Controllers\\DoctorsController.cs",
+              "RelativeToolTip": "Controllers\\DoctorsController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwC4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T04:33:03.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AppointmentsController.cs",
               "DocumentMoniker": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\Controllers\\AppointmentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AppointmentsController.cs",
               "ToolTip": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\Controllers\\AppointmentsController.cs",
               "RelativeToolTip": "Controllers\\AppointmentsController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T04:07:47.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -53,12 +70,11 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAIA1wDgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T04:07:47.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T04:07:47.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "20260219135602_Health-database.cs",
               "DocumentMoniker": "D:\\AllGitHubRepos\\zorch_pro\\potatosgradproj\\Migrations\\20260219135602_Health-database.cs",
               "RelativeDocumentMoniker": "Migrations\\20260219135602_Health-database.cs",
@@ -70,18 +86,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.103\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.103\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "ViewState": "AgIAAJwCAAAAAAAAAAAvwKsCAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-02-18T18:41:39.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T18:41:39.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Microsoft.NET.TargetFrameworkInference.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
